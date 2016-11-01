@@ -20,14 +20,17 @@ body {
   color: #777;
 }
 
-ul.my-nav {
+ul.my-nav,
+ul.ny-nav p {
+ font-size: 1.75rem;
  list-style-type: none;
  padding-top: .75rem;
  padding-bottom: .75rem;
  background-color: #e8e8e8;
 }
 
-ul.my-nav li {
+ul.my-nav li,
+ul.my-nam p {
   display: inline;
   margin: 2rem;
 }
@@ -35,6 +38,8 @@ ul.my-nav li {
 ul.my-nav a {
  color: #999;
  font-size: 1.75rem;
+ padding-right: 1rem;
+ padding-left: 1rem;
  font-weight: 300;
  padding-bottom: 2rem;
 }
