@@ -15,3 +15,35 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+body {
+  color: #777;
+}
+
+ul.my-nav {
+ list-style-type: none;
+ padding-top: .75rem;
+ padding-bottom: .75rem;
+ background-color: #e8e8e8;
+}
+
+ul.my-nav li {
+  display: inline;
+  margin: 2rem;
+}
+
+ul.my-nav a {
+ color: #999;
+ font-size: 1.75rem;
+ font-weight: 300;
+ padding-bottom: 2rem;
+}
+
+ul.my-nav a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+ul.my-nav a:active {
+  color: #ff7910;
+}

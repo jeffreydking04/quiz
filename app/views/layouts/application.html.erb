@@ -10,6 +10,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <ul class="my-nav">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Create", root_path %></li>
+        <li><%= link_to "Quiz", root_path %></li>
+        <li><%= link_to "Essays", root_path %></li>
+      </ul>
+
+      <%= yield %>
+
+    </div>
   </body>
 </html>
