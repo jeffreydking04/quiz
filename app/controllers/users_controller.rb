@@ -12,6 +12,7 @@ class UsersController < ApplicationController
 
     if @user.save
       flash[:notice] = "welcome"
+      create_session(@user)
       redirect_to(root_path)
     else
       flash.now[:alert] = "error"

@@ -17,11 +17,11 @@
         <li><%= link_to "Quiz", root_path %></li>
         <li><%= link_to "Essays", root_path %></li>
         <div class="pull-right user-info">
-          <% if false %>
-            <p><%= "jdking" %>
-            <%= link_to "Sign Out", root_path %></p>
+          <% if current_user %>
+            <p><%= current_user.name %>
+            <%= link_to "Sign Out", session_path(current_user), method: :delete %></p>
           <% else %>
-            <p><%= link_to "Sign In", root_path %>
+            <p><%= link_to "Sign In", new_session_path %>
             <%= link_to "Sign Up", new_user_path %></p>
           <% end %>
         </div>
